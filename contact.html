@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Dnuctornal’s for future-ready web, system, and digital technology solutions.">
-  <title>Contact | Dnuctornal’s</title>
+  <meta name="description" content="Contact Dnuctornal's for future-ready web, system, and digital technology solutions.">
+  <title>Contact | Dnuctornal's</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="contact">
+<body data-page="contact" class="page-accent-contact">
   <div class="site-shell">
+    <div class="site-bg" aria-hidden="true">
+      <div class="site-noise"></div>
+      <div class="site-glow"></div>
+    </div>
+
     <header class="site-header">
       <nav class="navbar container" aria-label="Primary">
-        <a class="brand" href="index.html" aria-label="Dnuctornal’s home">
+        <a class="brand" href="index.html" aria-label="Dnuctornal's home">
           <span class="brand-mark">D</span>
-          <span class="brand-text">Dnuctornal’s</span>
+          <span class="brand-text">Dnuctornal's</span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
           <span></span>
@@ -39,21 +44,25 @@
 
     <main>
       <section class="page-hero section">
-        <div class="container" data-reveal>
+        <div class="page-hero-atmosphere" aria-hidden="true">
+          <div class="mesh-glow" data-parallax data-depth="0.12" style="--glow-size: 20rem; --glow-top: 12%; --glow-left: 8%; --glow-color: rgba(96, 216, 255, 0.14);"></div>
+          <div class="mesh-glow" data-parallax data-depth="0.14" style="--glow-size: 24rem; --glow-top: 14%; --glow-right: 4%; --glow-color: rgba(142, 255, 232, 0.12);"></div>
+        </div>
+        <div class="container" data-reveal="up">
           <p class="eyebrow">Contact</p>
-          <h1>Let’s talk about your next digital build</h1>
+          <h1>Let's talk about your next digital build</h1>
           <p class="page-intro">
-            Reach out to Dnuctornal’s for websites, systems, and future-ready solutions designed to support growth.
+            Reach out to Dnuctornal's for websites, systems, and premium digital solutions designed to support growth with more clarity.
           </p>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container contact-layout">
-          <div class="glass-card contact-panel" data-reveal>
+      <section class="section section-atmosphere">
+        <div class="container contact-console">
+          <div class="glass-card contact-panel" data-reveal="left">
             <div class="section-heading align-left">
               <p class="eyebrow">Send a Message</p>
-              <h2>We’d love to hear from you</h2>
+              <h2>Start the conversation through a more refined command-console layout</h2>
             </div>
             <form class="contact-form">
               <div class="form-grid">
@@ -74,48 +83,109 @@
                 Message
                 <textarea name="message" rows="6" placeholder="Tell us about your project"></textarea>
               </label>
+              <div class="pill-row">
+                <span class="status-pill">Response workflow active</span>
+                <span class="status-pill">Priority launch guidance</span>
+              </div>
               <button class="btn btn-primary" type="submit">Send Inquiry</button>
             </form>
           </div>
 
-          <div class="contact-aside">
-            <article class="glass-card contact-card" data-reveal>
-              <i class="fa-solid fa-envelope"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:hello@dnuctornals.com">hello@dnuctornals.com</a></p>
-            </article>
-            <article class="glass-card contact-card" data-reveal>
-              <i class="fa-solid fa-phone"></i>
-              <h3>Phone</h3>
-              <p><a href="tel:+630000000000">+63 000 000 0000</a></p>
-            </article>
-            <article class="glass-card contact-card" data-reveal>
-              <i class="fa-solid fa-location-dot"></i>
-              <h3>Address</h3>
-              <p>Metro Manila, Philippines</p>
-            </article>
-            <article class="glass-card contact-card" data-reveal>
-              <i class="fa-solid fa-share-nodes"></i>
-              <h3>Social Media</h3>
-              <div class="social-links">
-                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <aside class="console-panel dashboard-card" data-reveal="right">
+            <div class="console-header">
+              <div>
+                <p class="eyebrow">Signal Desk</p>
+                <h2>Contact routes, response windows, and operational visibility</h2>
               </div>
-            </article>
-          </div>
+            </div>
+
+            <div class="contact-chip-grid reveal-group" data-stagger>
+              <article class="contact-chip" data-reveal="up">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:hello@dnuctornals.com">hello@dnuctornals.com</a></p>
+                </div>
+              </article>
+              <article class="contact-chip" data-reveal="up">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p><a href="tel:+630000000000">+63 000 000 0000</a></p>
+                </div>
+              </article>
+              <article class="contact-chip" data-reveal="up">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Metro Manila, Philippines</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="contact-metric-grid">
+              <article data-activate>
+                <span>Response Window</span>
+                <strong data-counter data-value="12" data-suffix="h">12h</strong>
+              </article>
+              <article data-activate>
+                <span>Active Channels</span>
+                <strong data-counter data-value="4">4</strong>
+              </article>
+              <article data-activate>
+                <span>Coverage</span>
+                <strong>24/7</strong>
+              </article>
+            </div>
+
+            <div class="console-map" data-parallax-group>
+              <div class="map-grid" data-parallax-layer data-depth="8">
+                <div class="map-route"></div>
+                <span class="map-node origin"></span>
+                <span class="map-node hub"></span>
+                <span class="map-node target"></span>
+              </div>
+            </div>
+
+            <div class="console-log reveal-group" data-stagger>
+              <article data-reveal="up">
+                <span class="mini-label">Inbound Queue</span>
+                <p>Discovery calls, support coordination, and launch consultations routed through one system.</p>
+              </article>
+              <article data-reveal="up">
+                <span class="mini-label">Social Signal</span>
+                <div class="social-links">
+                  <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+              </article>
+            </div>
+          </aside>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <div class="glass-card map-placeholder" data-reveal>
-            <p class="eyebrow">Map Placeholder</p>
-            <h2>Location overview</h2>
-            <p>
-              A live map embed can be added here later for a physical office or meeting point.
-            </p>
+          <div class="map-placeholder spotlight-card" data-reveal="up">
+            <p class="eyebrow">Location Overview</p>
+            <h2>A premium map treatment ready for a live embed later</h2>
+            <div class="contact-layout">
+              <div class="contact-signal">
+                <span class="mini-label">Regional Presence</span>
+                <div class="progress-line" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p>Use this space for a live office map, meeting radius, or regional coverage view when needed.</p>
+              </div>
+              <div class="contact-signal">
+                <span class="mini-label">Preferred Channels</span>
+                <p>Email for project briefs, phone for urgent coordination, and social channels for light touchpoints.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -126,7 +196,7 @@
         <div>
           <a class="brand footer-brand" href="index.html">
             <span class="brand-mark">D</span>
-            <span class="brand-text">Dnuctornal’s</span>
+            <span class="brand-text">Dnuctornal's</span>
           </a>
           <p class="footer-copy">
             Future-ready digital systems, premium web experiences, and modern technology solutions.
@@ -161,7 +231,7 @@
         </div>
       </div>
       <div class="container footer-bottom">
-        <p>&copy; 2026 Dnuctornal’s. All rights reserved.</p>
+        <p>&copy; 2026 Dnuctornal's. All rights reserved.</p>
       </div>
     </footer>
   </div>

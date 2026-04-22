@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="View Dnuctornal’s projects including smart systems, dashboards, websites, and management platforms.">
-  <title>Projects | Dnuctornal’s</title>
+  <meta name="description" content="View Dnuctornal's projects including smart systems, dashboards, websites, and management platforms.">
+  <title>Projects | Dnuctornal's</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="projects">
+<body data-page="projects" class="page-accent-projects">
   <div class="site-shell">
+    <div class="site-bg" aria-hidden="true">
+      <div class="site-noise"></div>
+      <div class="site-glow"></div>
+    </div>
+
     <header class="site-header">
       <nav class="navbar container" aria-label="Primary">
-        <a class="brand" href="index.html" aria-label="Dnuctornal’s home">
+        <a class="brand" href="index.html" aria-label="Dnuctornal's home">
           <span class="brand-mark">D</span>
-          <span class="brand-text">Dnuctornal’s</span>
+          <span class="brand-text">Dnuctornal's</span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
           <span></span>
@@ -39,33 +44,51 @@
 
     <main>
       <section class="page-hero section">
-        <div class="container" data-reveal>
+        <div class="page-hero-atmosphere" aria-hidden="true">
+          <div class="mesh-glow" data-parallax data-depth="0.1" style="--glow-size: 22rem; --glow-top: 12%; --glow-left: 10%; --glow-color: rgba(156, 136, 255, 0.14);"></div>
+          <div class="mesh-glow" data-parallax data-depth="0.14" style="--glow-size: 26rem; --glow-top: 10%; --glow-right: 4%; --glow-color: rgba(96, 216, 255, 0.12);"></div>
+        </div>
+        <div class="container" data-reveal="up">
           <p class="eyebrow">Projects</p>
           <h1>Selected work that reflects capability, polish, and scale</h1>
           <p class="page-intro">
-            Explore sample projects that highlight our approach to system design, interfaces,
-            and practical technology solutions.
+            Explore compact case-study panels that show how we translate visual direction, system clarity, and measurable outcomes into finished work.
           </p>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section-atmosphere">
         <div class="container">
-          <div class="filter-bar glass-card" data-reveal>
+          <div class="filter-bar glass-card" data-reveal="up">
             <button class="filter-chip active" type="button">All</button>
             <button class="filter-chip" type="button">Systems</button>
             <button class="filter-chip" type="button">Web</button>
             <button class="filter-chip" type="button">Dashboards</button>
             <button class="filter-chip" type="button">Enterprise</button>
           </div>
-          <div class="card-grid two-col project-grid">
-            <article class="glass-card project-card" data-reveal>
-              <div class="project-media project-media-one"></div>
+
+          <div class="card-grid two-col project-grid reveal-group" data-stagger>
+            <article class="case-study-panel dashboard-card project-card" data-reveal="left">
+              <div class="project-frame project-frame-one" data-parallax-group>
+                <div class="frame-bars" data-parallax-layer data-depth="8">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="frame-panels">
+                  <div class="frame-panel chart" data-parallax-layer data-depth="12"></div>
+                  <div class="frame-panel stack" data-parallax-layer data-depth="18">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
               <div class="project-content">
                 <p class="eyebrow">Systems</p>
                 <h2>Smart Inventory System</h2>
                 <p>
-                  A centralized inventory platform designed to track stock levels, movement, and operational insights in real time.
+                  A centralized inventory platform designed to track stock levels, movement, and operational insights in real time across warehouse teams.
                 </p>
                 <div class="project-metrics">
                   <span class="metric-chip">99.2% uptime</span>
@@ -84,13 +107,28 @@
                 <a class="btn btn-secondary" href="contact.html">View Details</a>
               </div>
             </article>
-            <article class="glass-card project-card" data-reveal>
-              <div class="project-media project-media-two"></div>
+
+            <article class="case-study-panel dashboard-card project-card" data-reveal="right">
+              <div class="project-frame project-frame-two" data-parallax-group>
+                <div class="frame-bars" data-parallax-layer data-depth="8">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="frame-panels">
+                  <div class="frame-panel chart" data-parallax-layer data-depth="12"></div>
+                  <div class="frame-panel stack" data-parallax-layer data-depth="18">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
               <div class="project-content">
                 <p class="eyebrow">Dashboards</p>
                 <h2>Business Analytics Dashboard</h2>
                 <p>
-                  A premium analytics interface for monitoring KPIs, trend data, and strategic performance across teams.
+                  A premium analytics interface for monitoring KPIs, trend signals, and strategic performance across teams and leadership.
                 </p>
                 <div class="project-metrics">
                   <span class="metric-chip">Live KPI sync</span>
@@ -109,13 +147,28 @@
                 <a class="btn btn-secondary" href="contact.html">View Details</a>
               </div>
             </article>
-            <article class="glass-card project-card" data-reveal>
-              <div class="project-media project-media-three"></div>
+
+            <article class="case-study-panel dashboard-card project-card" data-reveal="left">
+              <div class="project-frame project-frame-three" data-parallax-group>
+                <div class="frame-bars" data-parallax-layer data-depth="8">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="frame-panels">
+                  <div class="frame-panel chart" data-parallax-layer data-depth="12"></div>
+                  <div class="frame-panel stack" data-parallax-layer data-depth="18">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
               <div class="project-content">
                 <p class="eyebrow">Web</p>
                 <h2>Portfolio Website</h2>
                 <p>
-                  A visually refined brand presence built to showcase identity, services, and digital professionalism.
+                  A visually refined brand presence built to showcase identity, services, and a stronger sense of digital professionalism.
                 </p>
                 <div class="project-metrics">
                   <span class="metric-chip">92 performance score</span>
@@ -134,8 +187,23 @@
                 <a class="btn btn-secondary" href="contact.html">View Details</a>
               </div>
             </article>
-            <article class="glass-card project-card" data-reveal>
-              <div class="project-media project-media-four"></div>
+
+            <article class="case-study-panel dashboard-card project-card" data-reveal="right">
+              <div class="project-frame project-frame-four" data-parallax-group>
+                <div class="frame-bars" data-parallax-layer data-depth="8">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="frame-panels">
+                  <div class="frame-panel chart" data-parallax-layer data-depth="12"></div>
+                  <div class="frame-panel stack" data-parallax-layer data-depth="18">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
               <div class="project-content">
                 <p class="eyebrow">Enterprise</p>
                 <h2>Management Information System</h2>
@@ -162,6 +230,47 @@
           </div>
         </div>
       </section>
+
+      <section class="section section-alt">
+        <div class="container project-summary-grid">
+          <article class="project-summary-card spotlight-card" data-reveal="left">
+            <p class="eyebrow">Delivery Metrics</p>
+            <h2>Compact proof points that support every case study</h2>
+            <div class="contact-metric-grid">
+              <article data-activate>
+                <span>Average Launch Lift</span>
+                <strong data-counter data-value="34" data-suffix="%">34%</strong>
+              </article>
+              <article data-activate>
+                <span>Workflow Reduction</span>
+                <strong data-counter data-value="28" data-suffix="%">28%</strong>
+              </article>
+              <article data-activate>
+                <span>Operational Confidence</span>
+                <strong data-counter data-value="93" data-suffix="%">93%</strong>
+              </article>
+            </div>
+            <p>
+              We structure each delivery around measurable outcomes, clearer reporting, and a stronger final presentation so the work performs well and looks the part.
+            </p>
+          </article>
+          <div class="project-summary-media project-frame-two" data-reveal="right">
+            <div class="frame-bars">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="frame-panels">
+              <div class="frame-panel chart"></div>
+              <div class="frame-panel stack">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -169,7 +278,7 @@
         <div>
           <a class="brand footer-brand" href="index.html">
             <span class="brand-mark">D</span>
-            <span class="brand-text">Dnuctornal’s</span>
+            <span class="brand-text">Dnuctornal's</span>
           </a>
           <p class="footer-copy">
             Future-ready digital systems, premium web experiences, and modern technology solutions.
@@ -204,7 +313,7 @@
         </div>
       </div>
       <div class="container footer-bottom">
-        <p>&copy; 2026 Dnuctornal’s. All rights reserved.</p>
+        <p>&copy; 2026 Dnuctornal's. All rights reserved.</p>
       </div>
     </footer>
   </div>
